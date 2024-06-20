@@ -4,7 +4,7 @@ This GitHub does not contain the raw data we used and obtained (with some minor 
 
 
 # Workflow
-<p align="center"> <img src="https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Sources/Images/Chara_FlowChart_450_1x.png" /></p>
+<p align="center"> <img src="https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Sources/Images/Chara_FlowChart_450px.png" /></p>
 
 # Introduction
 Above. I've portrayed the Workflow in which the Differential Expression Charaphyceae Project was executed.
