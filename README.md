@@ -45,9 +45,11 @@ See [TRINITY](Scripts/02_Trinity) for a more in-depth overview of what we did.
 
 
 ## 4. BUSCO
-To determine the quality (completeness) of our assemblies we followed up by running [BUSCO](https://busco.ezlab.org/) ([Seppey *et al* 2019](https://link.springer.com/protocol/10.1007/978-1-4939-9173-0_14)). using the ‘eukaryota_odb10’ reference set. <br/><br/>See [BUSCO](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/03_BUSCO) for a more in-depth overview of what we did.
+To determine the quality (completeness) of our assemblies, we followed up by running [BUSCO](https://busco.ezlab.org/) ([Seppey *et al* 2019](https://link.springer.com/protocol/10.1007/978-1-4939-9173-0_14)). using the ‘eukaryota_odb10’ reference set. <br/><br/>See [BUSCO](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/03_BUSCO) for a more in-depth overview of what we did.
 
 
-
+## 5. TPM Filtering
+We must do some TPM filtering before we can do differential expression analyses. Basically, this means we have to make sure we filter out the noise the noise (Low TPM). </br> For more detail, go to the Trinity documentation [Trinity Transcript Quantification](https://github.com/trinityrnaseq/trinityrnaseq/wiki/Trinity-Transcript-Quantification). </br>
+As a follow along guide (how we did it), go to [TPM Filtering](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/04_TPM_Filtering)
 
 
