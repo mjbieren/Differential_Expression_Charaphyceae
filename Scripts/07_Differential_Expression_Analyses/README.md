@@ -52,6 +52,7 @@ This step is split into two scripts [14A_Extract_And_Cluster_Expressed_Transcrip
 
 ## DEMC
 DEMC (or fully Differential Expression Matrices Combined) automatically filters out non-annotated and nondifferential expression genes. It creates Several files:
+
 - Decontaminated & Differential protein fasta file with the description of origin (against what it was matched)
 - Decontaminated & Differential protein fasta file without the description of origin
 - Differentially expressed transcript fasta file
@@ -63,7 +64,7 @@ DEMC (or fully Differential Expression Matrices Combined) automatically filters 
 - Decontaminated filtered Trinotate DE Matrix (As a user you can define which columns you want to include)
 - Unfiltered Infernal output converted fasta file. (Infernal hits matched against transcript and parsed into fasta file).
 
-  For more information, go to [DEMC](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/07_Differential_Expression_Analyses/15_DEMC)
+</br>For more information, go to [DEMC](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/07_Differential_Expression_Analyses/15_DEMC)
 
 
 ## KEGG Counter
