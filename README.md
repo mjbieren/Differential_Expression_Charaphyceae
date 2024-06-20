@@ -23,6 +23,11 @@ At Novogene (Cambridge, UK), the samples underwent quality checks using a Bionan
 ## 2. FastQC
 [FastQC](https://github.com/s-andrews/FastQC) ([Simon Andrews](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)) was used as a quality control, as very bad samples (Either from our in-house or downloaded from the SRA set) were then identified to be removed. Even if we removed the bad reads, some of them had such a low read count after trimming that we decided not to include them in our sample list and, therefore not included within the project. <br/>For more information on how FastQC was used within the project, go to [FASTQC](Scripts/01_FastQC).</br></br> For more information on FastQC please go to their site http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
+We followed this up with [MultiQC](https://multiqc.info/) to concatenate all the results together with the following command:
+```
+multiqc /dir_with_fastqc_reports -o directory_you_wan
+```
+
 
 ## 3. Trinity *de novo* Assembly
 After FastQC quality control, all samples were then assembled with the Trinity pipeline. <br/>First, the adapters were trimmed with [Trimmomatic](https://github.com/usadellab/Trimmomatic) ([A. M Bolger et al_2014](https://academic.oup.com/bioinformatics/article/30/15/2114/2390096)) with the settings:
