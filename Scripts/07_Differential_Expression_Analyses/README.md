@@ -51,6 +51,23 @@ We run this script with the Trinity script "analyze_diff_expr.pl," but we includ
 This step is split into two scripts [14A_Extract_And_Cluster_Expressed_Transcripts.sh](https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Scripts/07_Differential_Expression_Analyses/14_Extract_Differential_Expressed_Transcript/14A_Extract_And_Cluster_Expressed_Transcripts.sh) and [14B_Extract_Genes_Into_Expression_Clusters_ALL.sh](https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Scripts/07_Differential_Expression_Analyses/14_Extract_Differential_Expressed_Transcript/14B_Extract_Genes_Into_Expression_Clusters_All.sh)
 
 ## DEMC
-DEMC automatically 
+DEMC (or fully Differential Expression Matrices Combined) automatically filters out non-annotated and nondifferential expression genes. It creates Several files:
+- Decontaminated & Differential protein fasta file with the description of origin (against what it was matched)
+- Decontaminated & Differential protein fasta file without the description of origin
+- Differentially expressed transcript fasta file
+- Differentially expressed genes that matched against Infernal in Matrix form (looks like Trinnotate)
+- Differentially expressed genes that matched against Infernal in fasta file format
+- KEGG KO Matrix of Differential Expressed and Decontaminated proteins
+- KEGG Module Matrix of Differential Expressed and Decontaminated Proteins
+- KEGG Pathway Matrix of Differential Expressed and Decontaminated Proteins
+- Decontaminated filtered Trinotate DE Matrix (As a user you can define which columns you want to include)
+- Unfiltered Infernal output converted fasta file. (Infernal hits matched against transcript and parsed into fasta file).
+
+  For more information, go to [DEMC](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/07_Differential_Expression_Analyses/15_DEMC)
+
+
+## KEGG Counter
+Basically, a tool that uses the KEGG matrix files from DEMC and creates a KEGG table that you can plot to have a KEGG bar plot. See [KEGGCounter](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/07_Differential_Expression_Analyses/16_KEGGCounter)
+For more information.
 
 
