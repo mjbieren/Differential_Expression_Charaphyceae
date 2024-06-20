@@ -52,4 +52,9 @@ To determine the quality (completeness) of our assemblies, we followed up by run
 We must do some TPM filtering before we can do differential expression analyses. Basically, this means we have to make sure we filter out the noise the noise (Low TPM). </br> For more detail, go to the Trinity documentation [Trinity Transcript Quantification](https://github.com/trinityrnaseq/trinityrnaseq/wiki/Trinity-Transcript-Quantification). </br>
 As a follow along guide (how we did it), go to [TPM Filtering](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/04_TPM_Filtering)
 
+## 6. TransDecoder
+After getting the new Trinity files (original and filtered TPM files) we continued with obtaining the proteins with [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki) ([Haas, BJ](https://github.com/TransDecoder/TransDecoder))
+1. Extracting the open reading frames with TransDecoder.LongOrfs
+3. Predict the likely coding region
 
+See [TransDecoder](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/05_Transdecoder) for a more in-depth overview of what we did.
