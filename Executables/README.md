@@ -1,1 +1,13 @@
-readme
+# Exectubles
+Within these folders, I've already pre-compiled executables that are ready to be used.
+
+I've compiled for 3 different systems:
+```
+Debian 10 (works also on 11)
+Scientific Linux 7 (Red Hat Based)
+```
+
+If you have difficulties compiling the software yourself, please feel free to contact me at: <br/>
+maaikejacobine.bierenbroodspot@uni-goettingen.de 
+<br/>
+And I will create a compiled version for your UNIX system of choice
