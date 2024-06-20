@@ -90,7 +90,7 @@ E-value
 				"-p <Prefix>\t\t Set the Prefix of the KEGG Matrix, KEGG IDs: NOT REQUIRED %s"
 				"-c <Threshold DE Hit> \t\t Set the treshold of the Log2Fold values for the DE levels. e.g. 1.0 = values below -1.0 and above 1.0 are counted. This is a decimal number so you can also say 0.1, 0.3 etc: NOT REQUIRED (But recommended) %s"
 				"-h <Threshold KEGG hits> \t\t minimum amount of hits every set has to get in order to pass into the output file: NOT REQUIRED but recommended %s"					
-				"-s <Threshold minimum amount of sets> \t\t Add a prefix to the output files: NOT REQUIRED. Not setting this will result in files having the names like _DE_Matrix. Instead of <PREFIX>_%s"
+				"-s <Threshold minimum amount of sets> \t\t Minimum amount of hits every sample (they are paired per two as they have up and down-regulation hits) has to have to make the KEGG ID be parsed into the output file%s"
 				"%s"
 				, EOL, EOL, EOL, EOL, EOL, EOL, EOL, EOL, EOL, EOL);
 			return PARSE_COMMAND_LINE_MAN;
@@ -122,7 +122,7 @@ E-value
 			"-p <Prefix>\t\t Set the Prefix of the KEGG Matrix, KEGG IDs: NOT REQUIRED %s"
 			"-c <Threshold DE Hit> \t\t Set the treshold of the Log2Fold values for the DE levels. e.g. 1.0 = values below -1.0 and above 1.0 are counted. This is a decimal number so you can also say 0.1, 0.3 etc: NOT REQUIRED (But recommended) %s"
 			"-h <Threshold KEGG hits> \t\t minimum amount of hits every set has to get in order to pass into the output file: NOT REQUIRED but recommended %s"					
-			"-s <Threshold minimum amount of sets> \t\t Add a prefix to the output files: NOT REQUIRED. Not setting this will result in files having the names like _DE_Matrix. Instead of <PREFIX>_%s"
+			"-s <Threshold minimum amount of sets> \t\t Minimum amount of hits every sample (they are paired per two as they have up and down-regulation hits) has to have to make the KEGG ID be parsed into the output file%s"
 			"%s"
 			, EOL, EOL, EOL, EOL, EOL, EOL, EOL, EOL, EOL, EOL);
 		return PARSE_COMMAND_LINE_MAN;
