@@ -2,7 +2,7 @@
 
 #SBATCH -p medium
 #SBATCH -t 10:00:00
-#SBATCH -o Busco_E_Fimbriata_%J.out
+#SBATCH -o Busco_Chara_%J.out
 #SBATCH -C scratch
 #SBATCH -c 3
 #SBATCH --exclusive
