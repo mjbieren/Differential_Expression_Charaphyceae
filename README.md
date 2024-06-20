@@ -74,5 +74,5 @@ I'm not planning further development on this pipeline since it can easily be fol
 # Citing
 If you use anything within this repository, please cite
 ```
-Tim P. Rieseberg, Anja Holzhausen, Maaike J. Bierenbroodspot1,*, Wanchen Zhang, Ilka N. Abreu, Jan de Vries. Conserved carotenoid pigmentation in reproductive organs of Charophyceae. Philosophical Transactions B. 2024 July: doi: 10.1098/rstb.2015.0615
+Tim P. Rieseberg, Anja Holzhausen, Maaike J. Bierenbroodspot, Wanchen Zhang, Ilka N. Abreu, Jan de Vries. Conserved carotenoid pigmentation in reproductive organs of Charophyceae. Philosophical Transactions B. 2024 July: doi: 10.1098/rstb.2015.0615
 ```
