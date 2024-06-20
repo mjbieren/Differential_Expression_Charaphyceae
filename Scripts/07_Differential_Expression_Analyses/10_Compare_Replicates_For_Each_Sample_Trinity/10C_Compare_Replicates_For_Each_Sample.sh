@@ -6,7 +6,7 @@ SINGULARITY_HOME_PATH=${PWD}
 MATRIX=/home/Filtered_1_ALL_Only_abundance_estimates_matrix.isoform.counts.matrix
 SAMPLE_LIST=/home/Biological_Replicates.txt
 OUTPUT_PREFIX=Filtered_01_ALL_Only_C_
-SINGULARITY_TRINITY_IMAGE=/home/maaike/Singularity_Images/Trinity/trinityrnaseq.v2.15.1.simg
+SINGULARITY_TRINITY_IMAGE=/home/Singularity_Images/Trinity/trinityrnaseq.v2.15.1.simg
 
 #Testing
 #singularity exec --bind /data:/mounted $SINGULARITY_TRINITY_IMAGE ls /mounted
