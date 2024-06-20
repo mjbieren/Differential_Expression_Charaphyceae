@@ -25,7 +25,7 @@ At Novogene (Cambridge, UK), the samples underwent quality checks using a Bionan
 
 We followed this up with [MultiQC](https://multiqc.info/) to concatenate all the results together with the following command:
 ```
-multiqc /dir_with_fastqc_reports -o directory_you_wan
+multiqc /dir_with_fastqc_reports -o output_directory_you_want
 ```
 
 
