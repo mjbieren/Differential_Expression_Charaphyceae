@@ -4,7 +4,7 @@ This GitHub does not contain the raw data we used and obtained (with some minor 
 
 
 # Workflow
-<p align="center">![alt_text](Sources/Images/Chara_FlowChart_450x.png?raw=True "Pipeline")</p>
+<p align="center">(Sources/Images/Chara_FlowChart_450x.png?raw=True "Pipeline")</p>
 
 # Introduction
 Above. I've portrayed the Workflow in which the Differential Expression Charaphyceae Project was executed.
