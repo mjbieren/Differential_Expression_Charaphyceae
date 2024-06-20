@@ -30,7 +30,7 @@ multiqc /dir_with_fastqc_reports -o output_directory_you_want
 
 
 ## 3. Trinity *de novo* Assembly
-After FastQC quality control, all samples were then assembled with the Trinity pipeline. <br/>First, the adapters were trimmed with [Trimmomatic](https://github.com/usadellab/Trimmomatic) ([A. M Bolger et al_2014](https://academic.oup.com/bioinformatics/article/30/15/2114/2390096)) with the settings:
+After FastQC quality control, all samples were assembled with the Trinity pipeline. <br/>First, the adapters were trimmed with [Trimmomatic](https://github.com/usadellab/Trimmomatic) ([A. M Bolger et al_2014](https://academic.oup.com/bioinformatics/article/30/15/2114/2390096)) with the settings:
 ```
 -trimmomatic “novogene_adapter_sequences.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 MINLEN:36”
 ```
@@ -50,11 +50,29 @@ To determine the quality (completeness) of our assemblies, we followed up by run
 
 ## 5. TPM Filtering
 We must do some TPM filtering before we can do differential expression analyses. Basically, this means we have to make sure we filter out the noise the noise (Low TPM). </br> For more detail, go to the Trinity documentation [Trinity Transcript Quantification](https://github.com/trinityrnaseq/trinityrnaseq/wiki/Trinity-Transcript-Quantification). </br>
-As a follow along guide (how we did it), go to [TPM Filtering](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/04_TPM_Filtering)
+As a follow-along guide (how we did it), go to [TPM Filtering](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/04_TPM_Filtering)
 
 ## 6. TransDecoder
-After getting the new Trinity files (original and filtered TPM files) we continued with obtaining the proteins with [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki) ([Haas, BJ](https://github.com/TransDecoder/TransDecoder))
+After getting the new Trinity files (original and filtered TPM files), we continued with obtaining the proteins with [TransDecoder](https://github.com/TransDecoder/TransDecoder/wiki) ([Haas, BJ](https://github.com/TransDecoder/TransDecoder))
 1. Extracting the open reading frames with TransDecoder.LongOrfs
 3. Predict the likely coding region
 
 See [TransDecoder](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/05_Transdecoder) for a more in-depth overview of what we did.
+
+## 7. Differential Expression Analyses
+Now, we are actually going to do the Differential Expression analyses. In this step, we combine several Trinity and Trinotate scripts for more in-depth information on what we exactly did see [Differential Expression Analyses](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/07_Differential_Expression_Analyses).
+
+
+## 8. Phylogenetic Analysis
+As a final step, we did a phylogenetic analysis on our dataset; see [Phylogenetic Analysis](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/08_Phylogenetic_Analysis) for a more in-depth overview of what we did.
+
+
+# Notes for future development
+I'm not planning further development on this pipeline since it can easily be followed as is. Sorry :)
+
+
+# Citing
+If you use anything within this repository, please cite
+```
+Tim P. Rieseberg, Anja Holzhausen, Maaike J. Bierenbroodspot1,*, Wanchen Zhang, Ilka N. Abreu, Jan de Vries. Conserved carotenoid pigmentation in reproductive organs of Charophyceae. Philosophical Transactions B. 2024 July: doi: 10.1098/rstb.2015.0615
+```
