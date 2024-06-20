@@ -42,3 +42,12 @@ Trinity --seqType fq --left [LEFT_READS] --right [RIGHT_READS] --output [OUTPUT_
 I highly recommend reading Trinity's [Wiki site](https://github.com/trinityrnaseq/trinityrnaseq/wiki), which explains everything pretty well.<br/><br/>
 
 See [TRINITY](Scripts/02_Trinity) for a more in-depth overview of what we did.
+
+
+## 4. BUSCO
+To determine the quality (completeness) of our assemblies we followed up by running [BUSCO](https://busco.ezlab.org/) ([Seppey *et al* 2019](https://link.springer.com/protocol/10.1007/978-1-4939-9173-0_14)). using the ‘eukaryota_odb10’ reference set. <br/><br/>See [BUSCO](https://github.com/mjbieren/Differential_Expression_Charaphyceae/tree/main/Scripts/03_BUSCO) for a more in-depth overview of what we did.
+
+
+
+
+
