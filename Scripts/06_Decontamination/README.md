@@ -43,8 +43,8 @@ Your decontamination database is ready to use
 ## Conversion of your protein file.
 Similar to creating a database for decontamination, you have the same commands for creating an MMseqs2 database for your protein file.
 ```
-mmseqs createdb trinity_genes.fasta.transdecoder.pep StrainName_Klebsome_db.db || module purge && exit -1
-mmseqs createindex StrainName_Klebsome_db.db tmp || module purge && exit -1
+mmseqs createdb trinity_genes.fasta.transdecoder.pep StrainName_Chara_db.db || module purge && exit -1
+mmseqs createindex StrainName_Chara_db.db tmp || module purge && exit -1
 ```
 You can also use the script [ConvertToMMseqsDatabase.sh](https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Scripts/06_Decontamination/ConvertToMMseqsDatabase.sh) and run it in the same folder as the TransDecoder output .pep file.
 
