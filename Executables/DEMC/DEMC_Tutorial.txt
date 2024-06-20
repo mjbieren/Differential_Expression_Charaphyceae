@@ -1,0 +1,12 @@
+Tutorial DEMC
+
+-f /home/maaike/Documents/DEMC/Input/Trinity_Output_Combined_TOR.Trinity.fasta 
+-p /home/maaike/Documents/DEMC/Input/Trinity_Output_Combined_TOR.Trinity.fasta.transdecoder.pep 
+-t /home/maaike/Documents/DEMC/Input/00_Filtered.Trinotate.xls 
+-d /home/maaike/Documents/DEMC/Input/diffExpr.P0.001_C2.matrix.log2.centered.dat 
+-i /home/maaike/Documents/DEMC/Input/infernal.out 
+-r /home/maaike/Documents/DEMC/Output/ 
+-a Chara 
+-c transcript_id,#gene_id,prot_id,Kegg,infernal,gene_ontology_Pfam,EggNM.Description,EggNM.PFAMs
+
+$PROGRAMPATH -f IsoForm.fa -p Peptide.fa -t Trinotate_Output_File -d MatrixOutput.dat -i Infernal_Output -r OutputFolder -a [Strain] -c Trinotate_columns
