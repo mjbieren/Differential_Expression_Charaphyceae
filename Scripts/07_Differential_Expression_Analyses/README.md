@@ -43,6 +43,8 @@ We use Trinotate for functional annotation of the data. This is split into 6 dif
 - Get Gene Lengths A [12E_Get_Gene_Lengths_From_Trinity_Files.sh](https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Scripts/07_Differential_Expression_Analyses/12_Trinotate/12E_Get_Gene_Lengths_From_Trinity_Files.sh)
 - Get Gene Lengths B [12F_Get_Actual_Gene_Lengths_File.sh](https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Scripts/07_Differential_Expression_Analyses/12_Trinotate/12F_Get_Actual_Gene_Length_File.sh)
 
+Go to the wiki of Trinotate [here](https://github.com/Trinotate/Trinotate/wiki)
+
 ## Rename Matrix
 To redo the expression matrix with the features from Trinnotate, we used the Trinity Script "rename_matrix_feature_identifiers.pl" which is included in [13_Trinity_Rename_Matrix_Feature.sh](https://github.com/mjbieren/Differential_Expression_Charaphyceae/blob/main/Scripts/07_Differential_Expression_Analyses/13_Rename_Matrix/13_Trinity_Rename_Matrix_Feature.sh)
 
