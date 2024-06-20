@@ -9,6 +9,6 @@ THRESHOLD_KEGG_HITS=10 #minimum amount of hits every KEGG ID has to get in order
 THRESHOLD_MINIMUM_SETS=1 #Minimum amount of hits every sample (they are paired per two as they have up and down regulation hits) has to have to make the KEGG ID be parsed into the output file.
 PREFIX=ko #Prefix of the kegg IDS in trinotate e.g. ko00010.
 
-PROGRAMPATH=/home/maaike/Programs/KEGGCounter/KEGGCounter_Debian.out
+PROGRAMPATH=KEGGCounter.out
 
 $PROGRAMPATH -k $KEGG_MATRIX -d $KEGG_DESCRIPTION -p $PREFIX -r $OUTPUT_FOLDER -x $OUTPUT_PREFIX -c $THRESHOLD_DE -h $THRESHOLD_KEGG_HITS -s $THRESHOLD_MINIMUM_SETS
